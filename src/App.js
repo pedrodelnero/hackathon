@@ -5,14 +5,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import './App.css';
 import { RoleModels, Home } from './pages';
-import RoleModelDetail from './pages/RoleModelDetail'
+import { Navbar, Footer } from './components';
+import RoleModelDetail from './pages/RoleModelDetail';
 
 function App() {
-  console.log('APP');
   return (
     <Router>
       <CssBaseline />
-      <Container
+      <Navbar />
+      {/* <Container
         style={{
           width: '100%',
           height: '50px',
@@ -25,7 +26,7 @@ function App() {
         <Link to="/" style={{ textDecoration: 'none' }}>
           <Typography variant="h5">GateR</Typography>
         </Link>
-      </Container>
+      </Container> */}
       <Container
         style={{
           width: '100%',
@@ -41,6 +42,7 @@ function App() {
           <Route path="*" component={Home} />
         </Routes>
       </Container>
+      <Footer />
     </Router>
   );
 }
