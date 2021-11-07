@@ -25,211 +25,220 @@ const RoleModels = () => {
     <Navbar />
     <Typography variant="h4" textAlign="center" mt="70px" mb="80px">Our Stories as Web Developers</Typography>
     <Box sx={styles.grid}>
-    <Card sx={{ maxWidth: 250 }}>
+    <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250 }}>
+      <Card sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
+        margin="20px"
         image={image}
         alt="green iguana"
       />
-      <CardContent>
+      <CardContent sx={{padding: "0"}}>
         {/* <Typography gutterBottom variant="h5" component="div">
           Elizibeth Stuart
         </Typography> */}
-          <AccessibilityIcon />
+          <AccessibilityIcon  sx={styles.icon}/>
           <Typography variant="body2" color="text.secondary">
             <Typography>Mentor Name</Typography>
             <Typography>Nationality</Typography>
             <Typography>Gender</Typography>
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Developer</Button>
-          <Button size="small">Writer</Button>
+        <CardActions sx={{padding: "15px 0px 0px 0px"}}>
+          <Button size="small" sx={styles.button}>Developer</Button>
+          <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
     </Box>

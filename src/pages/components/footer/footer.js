@@ -7,7 +7,7 @@ export default function Footer() {
     const styles = makeStyles(useTheme());
 
     return (
-        <Box >
+        <Box sx={styles.footerContainer}>
             
         </Box>
     )
