@@ -1,5 +1,12 @@
-const styles = {
-    
+const makeStyles = (theme) => {
+    const styles = {
+        navbar: {
+            
+        }
+    }
+
+    return styles;
 }
 
-export default styles;
+
+export default makeStyles;

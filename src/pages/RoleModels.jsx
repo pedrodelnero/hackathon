@@ -1,12 +1,15 @@
 import React from 'react';
-import Card from '@mui/material/Card';
+import Card from '@mui/material/Card';  
 import CardActions from '@mui/material/CardActions';
+import { Container } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import { useTheme } from '@mui/material'
 
+<<<<<<< Updated upstream
 import image from '../images/Photo by Emmy E from Pexels2381069.jpg';
 import styles from './styles/cardStyles';
 
@@ -22,6 +25,8 @@ const RoleModels = () => {
         />
         <CardContent>
           {/* <Typography gutterBottom variant="h5" component="div">
+=======
+>>>>>>> Stashed changes
           Elizibeth Stuart
         </Typography> */}
           <AccessibilityIcon />
