@@ -11,7 +11,7 @@ const makeStyles = (theme) => {
             padding: '5px 15px',
             fontSize: '1.2em',
             textDecoration: 'none'
-        }
+        },
     }
 
     return styles;

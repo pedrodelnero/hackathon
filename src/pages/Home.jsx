@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import { Box } from '@mui/system';
 import { useTheme } from '@mui/system';
 import Navbar from './components/navbar';
-
+import { useNavigate } from 'react-router-dom';
 import makeStyles from './styles/homeStyles';
 import { IconButton } from '@mui/material';
 import { SearchOutlined } from '@material-ui/icons';
@@ -22,7 +22,13 @@ import Footer from './components/footer/footer';
 
 const Home = () => {
   const [searchItem, setSearchItem] = useState('');
+  const [clicked, setClicked] = useState(null);
   const styles = makeStyles(useTheme());
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate("/rolemodels");
+  }
 
   return (
     <Box sx={styles.container}>
@@ -36,7 +42,7 @@ const Home = () => {
           sx={{ m: 0, width: '' , ...styles.input}}
           InputProps={{
             startAdornment: <InputAdornment position="start"><Search></Search></InputAdornment>,
-            endAdornment: <InputAdornment position="end"><Button>Go</Button></InputAdornment>
+            endAdornment: <InputAdornment position="end"><Button onClick={onClick}>Go</Button></InputAdornment>
           }}
         />
           {/* <IconButton aria-label="search" sx={styles.button}><SearchOutlined /> Search Careers</IconButton> */}
