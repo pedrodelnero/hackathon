@@ -14,6 +14,10 @@ import { useTheme } from '@mui/system';
 import Navbar from './components/navbar';
 
 import makeStyles from './styles/homeStyles';
+import { IconButton } from '@mui/material';
+import { SearchOutlined } from '@material-ui/icons';
+import image1 from '../images/converted/hunter-newton-FQe4hjBlcPE-unsplash.png'
+import Footer from './components/footer/footer';
 
 
 const Home = () => {
@@ -23,9 +27,20 @@ const Home = () => {
   return (
     <Box sx={styles.container}>
       <Navbar />
-      <Box>
-        <Box>
-          <Typography variant="h6" color="initial">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sunt corporis commodi incidunt atque? Laudantium fugiat enim pariatur numquam distinctio molestiae! Repellat omnis sed eveniet necessitatibus aliquam. Id, architecto nulla?</Typography>
+      <Box sx={styles.headerContainer}>
+        <Box sx={styles.headerContent}>
+          <Typography variant="h4" color="initial" sx={styles.text}>What kind of future would you like to explore?</Typography>
+          <TextField
+          label="Search"
+          id="outlined-start-adornment"
+          sx={{ m: 0, width: '' , ...styles.input}}
+          InputProps={{
+            startAdornment: <InputAdornment position="start"><Search></Search></InputAdornment>,
+            endAdornment: <InputAdornment position="end"><Button>Go</Button></InputAdornment>
+          }}
+        />
+          {/* <IconButton aria-label="search" sx={styles.button}><SearchOutlined /> Search Careers</IconButton> */}
+          <Box component="img" src={image1} sx={styles.image}></Box>
         </Box>
       </Box>
     </Box>
