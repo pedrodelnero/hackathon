@@ -17,7 +17,7 @@ function App() {
           width: '100%',
           height: '50px',
           // border: '1px solid red',
-          margin: '0 0 20px 0',
+          margin: '0 0 0 0',
           display: 'flex',
           alignItems: 'center',
         }}

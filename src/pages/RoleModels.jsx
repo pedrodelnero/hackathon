@@ -9,6 +9,7 @@ import { Box } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import { useTheme } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 import Navbar from './components/navbar';
 import image from '../images/Photo by Emmy E from Pexels2381069.jpg'
@@ -19,13 +20,18 @@ import './styles/roleModelsStyles.css'
 
 const RoleModels = () => {
   const styles = makeStyles(useTheme());
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate("/rolemodel");
+  }
 
   return(
   <div className="container">
     <Navbar />
     <Typography variant="h4" textAlign="center" mt="70px" mb="80px">Our Stories as Web Developers</Typography>
     <Box sx={styles.grid}>
-    <Card sx={{ maxWidth: 250, padding: "16px" }}>
+    <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -49,7 +55,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -73,7 +79,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -97,7 +103,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -121,7 +127,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -145,7 +151,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -169,7 +175,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -193,7 +199,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
@@ -217,7 +223,7 @@ const RoleModels = () => {
           <Button size="small" sx={styles.button}>Writer</Button>
         </CardActions>
       </Card>
-      <Card sx={{ maxWidth: 250, padding: "16px" }}>
+      <Card onClick={onClick} sx={{ maxWidth: 250, padding: "16px" }}>
       <CardMedia
         component="img"
         height="140"
