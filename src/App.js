@@ -4,7 +4,8 @@ import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import './App.css';
-import { RoleModels, RoleModelDetail, Home } from './pages';
+import { RoleModels, Home } from './pages';
+import RoleModelDetail from './pages/RoleModelDetail'
 
 function App() {
   console.log('APP');
@@ -16,7 +17,7 @@ function App() {
           width: '100%',
           height: '50px',
           // border: '1px solid red',
-          margin: '0 0 20px 0',
+          margin: '0 0 0 0',
           display: 'flex',
           alignItems: 'center',
         }}
@@ -35,7 +36,7 @@ function App() {
       >
         <Routes>
           <Route path="/rolemodels" element={<RoleModels />} />
-          <Route path="/rolemodel/?id" element={<RoleModelDetail />} />
+          <Route path="/rolemodel" element={<RoleModelDetail />} />
           <Route exact path="/" element={<Home />} />
           <Route path="*" component={Home} />
         </Routes>
