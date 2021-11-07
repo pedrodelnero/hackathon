@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import { useTheme } from '@mui/material'
 
+
 import image from '../images/Photo by Emmy E from Pexels2381069.jpg';
 import styles from './styles/cardStyles';
 
