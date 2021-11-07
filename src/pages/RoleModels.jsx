@@ -13,13 +13,15 @@ import Navbar from './components/navbar';
 import image from '../images/Photo by Emmy E from Pexels2381069.jpg'
 import makeStyles from './styles/cardStyles';
 
+import './styles/roleModelsStyles.css'
+
 const RoleModels = () => {
   const styles = makeStyles(useTheme());
 
   return(
-  <div>
+  <div className="container">
     <Navbar />
-    <Typography>Our Stories as Web Developers</Typography>
+    <Typography variant="h4" textAlign="center" mt="70px" mb="80px">Our Stories as Web Developers</Typography>
     <Card sx={{ maxWidth: 250 }}>
       <CardMedia
         component="img"

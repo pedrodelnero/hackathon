@@ -22,7 +22,7 @@ export default function Navbar(props) {
           <Link sx={{...styles.firstLink, ...styles.link}} color="#ffffff" href="#">Careers</Link>
           <Link sx={styles.link} color="#ffffff" href="#">Profiles</Link>
           <Link sx={styles.link} color="#ffffff" href="#">Register</Link>
-          <Link sx={styles.link}color="#ffffff" href="#">Login</Link>
+          <Link sx={styles.link} color="#1976D2" bgcolor="white" href="#">Login</Link>
         </Toolbar>
       </AppBar>
     </Box>
