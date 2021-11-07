@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
@@ -11,6 +11,8 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
 const Home = () => {
+  const [searchItem, setSearchItem] = useState('');
+
   return (
     <Container style={{ padding: 0, margin: 0 }}>
       <Container
@@ -31,6 +33,7 @@ const Home = () => {
             borderRadius: '5px',
           }}
           placeholder="Search for career"
+          onChange={(e) => setSearchItem(e.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -50,50 +53,92 @@ const Home = () => {
             Featured Careers
           </Typography>
           <Container
-            style={{ display: 'flex', justifyContent: 'space-between' }}
+            style={{
+              display: 'flex',
+              justifyContent: searchItem ? 'center' : 'space-between',
+            }}
           >
-            <Card style={{ width: 250, height: '200px', position: 'relative' }}>
-              <CardContent>
-                <Typography variant="h5" style={{ marginTop: '40px' }}>
-                  Web Developer
-                </Typography>
-              </CardContent>
-              <CardActions
-                style={{ position: 'absolute', bottom: '20px', left: '60px' }}
+            {searchItem ? (
+              <Card
+                style={{ width: 250, height: '200px', position: 'relative' }}
               >
-                <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
-                  <Button size="small">Meet Members</Button>
-                </Link>
-              </CardActions>
-            </Card>
-            <Card style={{ width: 250, height: '200px', position: 'relative' }}>
-              <CardContent>
-                <Typography variant="h5" style={{ marginTop: '40px' }}>
-                  UX Researcher
-                </Typography>
-              </CardContent>
-              <CardActions
-                style={{ position: 'absolute', bottom: '20px', left: '60px' }}
-              >
-                <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
-                  <Button size="small">Meet Members</Button>
-                </Link>
-              </CardActions>
-            </Card>
-            <Card style={{ width: 250, height: '200px', position: 'relative' }}>
-              <CardContent>
-                <Typography variant="h5" style={{ marginTop: '40px' }}>
-                  Data Analyst
-                </Typography>
-              </CardContent>
-              <CardActions
-                style={{ position: 'absolute', bottom: '20px', left: '60px' }}
-              >
-                <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
-                  <Button size="small">Meet Members</Button>
-                </Link>
-              </CardActions>
-            </Card>
+                <CardContent>
+                  <Typography variant="h5" style={{ marginTop: '40px' }}>
+                    Web Developer
+                  </Typography>
+                </CardContent>
+                <CardActions
+                  style={{ position: 'absolute', bottom: '20px', left: '60px' }}
+                >
+                  <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
+                    <Button size="small">Meet Members</Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            ) : (
+              <>
+                <Card
+                  style={{ width: 250, height: '200px', position: 'relative' }}
+                >
+                  <CardContent>
+                    <Typography variant="h5" style={{ marginTop: '40px' }}>
+                      Web Developer
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      left: '60px',
+                    }}
+                  >
+                    <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
+                      <Button size="small">Meet Members</Button>
+                    </Link>
+                  </CardActions>
+                </Card>
+                <Card
+                  style={{ width: 250, height: '200px', position: 'relative' }}
+                >
+                  <CardContent>
+                    <Typography variant="h5" style={{ marginTop: '40px' }}>
+                      UX Researcher
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      left: '60px',
+                    }}
+                  >
+                    <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
+                      <Button size="small">Meet Members</Button>
+                    </Link>
+                  </CardActions>
+                </Card>
+                <Card
+                  style={{ width: 250, height: '200px', position: 'relative' }}
+                >
+                  <CardContent>
+                    <Typography variant="h5" style={{ marginTop: '40px' }}>
+                      Data Analyst
+                    </Typography>
+                  </CardContent>
+                  <CardActions
+                    style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      left: '60px',
+                    }}
+                  >
+                    <Link to="/rolemodels" style={{ textDecoration: 'none' }}>
+                      <Button size="small">Meet Members</Button>
+                    </Link>
+                  </CardActions>
+                </Card>
+              </>
+            )}
           </Container>
         </Container>
       </Container>
