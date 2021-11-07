@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import { useTheme } from '@mui/material'
 
-<<<<<<< Updated upstream
 import image from '../images/Photo by Emmy E from Pexels2381069.jpg';
 import styles from './styles/cardStyles';
 
@@ -25,8 +24,6 @@ const RoleModels = () => {
         />
         <CardContent>
           {/* <Typography gutterBottom variant="h5" component="div">
-=======
->>>>>>> Stashed changes
           Elizibeth Stuart
         </Typography> */}
           <AccessibilityIcon />
